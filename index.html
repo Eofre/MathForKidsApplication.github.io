@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Тренажёр</title>
+  </head>
+  <body>
+    <audio
+      id="audio"
+      src="./audio/standartnyy-zvuk-s-oshibochnym-otvetom.mp3"
+    ></audio>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <h1 class="header__title">MATH FOR KIDS</h1>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#" class="header__link">Тренажёр</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Теория</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="equation">
+        <div class="container">
+          <div class="equation__inner">
+            <div class="equation__statistics">
+              <h2 class="equation__statistics-title">Статистика</h2>
+              <div class="equation__account statistics">
+                <p>Счёт: <span id="account">0</span></p>
+              </div>
+              <div class="equation__record statistics">
+                <p>Рекорд: <span id="record">0</span></p>
+              </div>
+              <div class="equation__answers-correct statistics">
+                <p>
+                  Кол-во правильных ответов: <span id="correctAnswer">0</span>
+                </p>
+              </div>
+              <div class="equation__answers-incorrect statistics">
+                <p>
+                  Кол-во неправильных ответов:
+                  <span id="incorrectAnswer">0</span>
+                </p>
+              </div>
+            </div>
+            <div class="equation__example">
+              <h2 id="num1">1</h2>
+              <h2>+</h2>
+              <h2 id="num2">1</h2>
+              <h2>=</h2>
+              <h2>?</h2>
+            </div>
+            <div class="equation__answer-options">
+              <div class="equation__answer-option" id="option1">1</div>
+              <div class="equation__answer-option" id="option2">2</div>
+              <div class="equation__answer-option" id="option3">3</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/add.js"></script>
+  </body>
+</html>
