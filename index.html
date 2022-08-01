@@ -43,12 +43,12 @@
             <div class="equation__statistics">
               <h2 class="equation__statistics-title">Статистика</h2>
               <div class="equation__account statistics">
-                <p>Счёт: <span id="account">0</span></p>
+                <p>Уровень: <span id="account">0</span></p>
               </div>
               <div class="equation__record statistics">
                 <p>Рекорд: <span id="record">0</span></p>
               </div>
-              <div class="equation__answers-correct statistics">
+              <!-- <div class="equation__answers-correct statistics">
                 <p>
                   Кол-во правильных ответов: <span id="correctAnswer">0</span>
                 </p>
@@ -58,7 +58,7 @@
                   Кол-во неправильных ответов:
                   <span id="incorrectAnswer">0</span>
                 </p>
-              </div>
+              </div> -->
             </div>
             <div class="equation__example">
               <h2 id="num1">1</h2>
@@ -67,11 +67,22 @@
               <h2>=</h2>
               <h2>?</h2>
             </div>
-            <div class="equation__answer-options">
+            <form id="form-answer" class="equation__form-answer">
+              <input
+                id="input-answer"
+                type="number"
+                class="equation__input"
+                placeholder="Введите ответ"
+              />
+              <button id="btn-answer" type="submit" class="equation__btn">
+                Отправить
+              </button>
+            </form>
+            <!-- <div class="equation__answer-options">
               <div class="equation__answer-option" id="option1">1</div>
               <div class="equation__answer-option" id="option2">2</div>
               <div class="equation__answer-option" id="option3">3</div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
