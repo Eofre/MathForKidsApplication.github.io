@@ -290,12 +290,20 @@ a {
   .header__nav {
     margin-left: 10px;
   }
+
+  .header__list {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .header__item + .header__item {
-    margin-left: 5px;
+    margin-left: 0px;
+    margin-top: 5px;
   }
 
   .header__link {
     padding: 5px 9px;
+    font-size: 14px;
   }
 
   .equation__answer-option {
